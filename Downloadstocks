@@ -1,0 +1,5 @@
+import time
+for i in tickers: 
+    print(i)
+    time.sleep(0.5) # optional
+    yf.download(i, period="1y").to_csv('data'+str(i)+'.csv')
